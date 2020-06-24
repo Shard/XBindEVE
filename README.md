@@ -1,6 +1,6 @@
-# XBindEVE
+![Project Status: Alpha](https://img.shields.io/badge/Project%20status-Alpha-red) ![CircleCI](https://img.shields.io/circleci/build/github/shard/xbindeve) ![GPLv3](https://img.shields.io/github/license/Shard/xbindeve)
 
-![Project Status: Alpha](https://img.shields.io/badge/project status-alpha-red)
+# XBindEVE
 
 A guile module for [xbindkeys](https://ddg.gg/xbindkeys) that assists switching between multiple EVE Online clients within a X11 session and should be compatible with any X11 window manager.
 
@@ -8,7 +8,7 @@ A guile module for [xbindkeys](https://ddg.gg/xbindkeys) that assists switching 
 
 ### Dependencies
 
-Aside from `xbindkeys`, the only dependency for `xbindeve` is [wmctrl](https://ddg.gg/wmctrl)
+Asside from `xbindkeys`, the only dependency for XBindEVE is [wmctrl](https://www.freedesktop.org/wiki/Software/wmctrl/)
 
 ### Downloading
 
@@ -23,7 +23,7 @@ wget https://github.com/shard/xbindeve/raw/master/xbindeve.scm
 
 First you will need to create `~/.xbindkeysrc.scm` in your HOME folder if it doesn't exist and add the following:
 
-```guile
+```scheme
 (load "./xbindeve.scm") ; path to xbindeve.scm
 (define eve-accounts '(
                        ("Toon 1" "Toon 2")
